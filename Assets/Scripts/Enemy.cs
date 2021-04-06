@@ -27,7 +27,7 @@ public class Enemy : MonoBehaviour
         float distanceToPlayer = directionVector.magnitude;
 
         
-        if (distanceToPlayer >= 1.5f && distanceToPlayer <= 5f)
+        if (distanceToPlayer >= 1.5f )//&& distanceToPlayer <= 5f
         {
             
             targetPosition = new Vector3(

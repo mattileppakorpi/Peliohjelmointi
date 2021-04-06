@@ -8,6 +8,7 @@ public class Timer : MonoBehaviour
     public Text counterText;
     public float seconds, minutes;
     public static Timer instance { get; private set; }
+    private float penaltySeconds;
 
     void Awake()
     {
@@ -21,14 +22,15 @@ public class Timer : MonoBehaviour
 
     public void AddSeconds(float penalty)
     {
-        seconds = seconds + penalty;
+        penaltySeconds+=penalty;
     }
 
-    // Update is called once per frame
+  
     void Update()
     {
-        minutes = (int)(Time.time / 60f);
-        seconds = (int)(Time.time % 60f);
+        var time = Time.time + penaltySeconds;
+        minutes = (int)(time / 60f);
+        seconds = (int)(time % 60f);
         counterText.text = minutes.ToString("00") + ":" + seconds.ToString("00");
     }
 
