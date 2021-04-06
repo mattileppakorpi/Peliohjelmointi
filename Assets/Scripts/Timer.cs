@@ -7,10 +7,21 @@ public class Timer : MonoBehaviour
 {
     public Text counterText;
     public float seconds, minutes;
+    public static Timer instance { get; private set; }
+
+    void Awake()
+    {
+        instance = this;
+    }
 
     void Start()
     {
         counterText = GetComponent<Text>() as Text;
+    }
+
+    public void AddSeconds(float penalty)
+    {
+        seconds = seconds + penalty;
     }
 
     // Update is called once per frame
@@ -20,4 +31,6 @@ public class Timer : MonoBehaviour
         seconds = (int)(Time.time % 60f);
         counterText.text = minutes.ToString("00") + ":" + seconds.ToString("00");
     }
+
+    
 }

@@ -4,13 +4,11 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
-    // Start is called before the first frame update
+    
     void Start()
     {
         
     }
-
-   
     
     public PlayerController player;
     public float MoveSpeed = 5f;
@@ -19,7 +17,7 @@ public class Enemy : MonoBehaviour
 
     private Vector3 targetPosition;
 
-    // Update is called once per frame
+    
     void Update()
     {
         
@@ -29,7 +27,7 @@ public class Enemy : MonoBehaviour
         float distanceToPlayer = directionVector.magnitude;
 
         
-        if (distanceToPlayer >= 1.5f & distanceToPlayer <= 10f)
+        if (distanceToPlayer >= 1.5f && distanceToPlayer <= 5f)
         {
             
             targetPosition = new Vector3(
@@ -42,7 +40,7 @@ public class Enemy : MonoBehaviour
         }
         else
         {
-            Debug.Log("At attack range!");
+            //Debug.Log("testi");
 
             
             Quaternion enemysNewRotation = Quaternion.LookRotation(directionVector, Vector3.up);
