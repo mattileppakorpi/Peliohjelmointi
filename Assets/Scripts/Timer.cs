@@ -6,6 +6,8 @@ using UnityEngine.UI;
 public class Timer : MonoBehaviour
 {
     public Text counterText;
+   
+   
     public float seconds, minutes;
     public static Timer instance { get; private set; }
     private float penaltySeconds;
@@ -18,11 +20,14 @@ public class Timer : MonoBehaviour
     void Start()
     {
         counterText = GetComponent<Text>() as Text;
+       
+        
     }
 
     public void AddSeconds(float penalty)
     {
         penaltySeconds+=penalty;
+       
     }
 
   
