@@ -13,6 +13,7 @@ public class Ending : MonoBehaviour
     float m_Timer;
     public Text endText;
     public Text time;
+    //public Timer timer;
 
 
     void OnTriggerEnter(Collider other)
@@ -39,7 +40,9 @@ public class Ending : MonoBehaviour
     {
         //endText = GetComponent<Text3>() as Text;
         endText.text = "Hienosti pelattu, onnea!!!";
-        time.text = "aika:";
+        string aika = Timer.instance.counterText.text;
+        Timer.instance.enabled = false;
+        time.text = "aika:" + aika;
         m_Timer += Time.deltaTime;
         exitBackgroundImageCanvasGroup.alpha = m_Timer / fadeDuration;
 

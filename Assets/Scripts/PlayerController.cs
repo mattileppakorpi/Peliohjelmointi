@@ -6,6 +6,8 @@ using UnityEngine.UI;
 
 public class PlayerController : MonoBehaviour
 {
+    public int hits = 0;
+    public Text hitText;
     public float speed = 0;
     private Rigidbody rb;
     public bool playerIsOnTheground = true;
@@ -26,20 +28,17 @@ public class PlayerController : MonoBehaviour
     }
     void Update()
     {
-        
+        hitText.text = "osumia: "+ hits.ToString();
+
     }
-    void HideText()
-    {
-        //StartCoroutine(WaitSeconds(5));
-        //infoText.text = "";
-    }
+    
 
     void Start()
     {
         rb = GetComponent<Rigidbody>();
         penaltyText.text = "";
         infoText.text = "spacesta hyppää!";
-       // HideText();
+       
 
     }
 
@@ -53,7 +52,7 @@ public class PlayerController : MonoBehaviour
     {
         if (playerIsOnTheground) { 
            
-            movementZ = 15.0f;
+            movementZ = 10.0f;
             playerIsOnTheground = false;
             infoText.text = "";
         }
@@ -75,10 +74,7 @@ public class PlayerController : MonoBehaviour
 
 
     }
-    public void ShowPenaltyText()
-    { 
-
-    }
+    
     public void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.tag == "Ground")
@@ -90,6 +86,7 @@ public class PlayerController : MonoBehaviour
         if (collision.gameObject.tag == "Wall")
         {
             Timer.instance.AddSeconds(2.0f);
+            hits = hits + 1;
             penaltyText.text = "Penalttia +2s!";
             //ShowPenaltyText();
             StartCoroutine(WaitSeconds());

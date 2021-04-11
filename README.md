@@ -4,3 +4,4 @@ projektin miettimisvaihe 2h
 4.4: radan rakentamista ja kellon kanssa painimista 2h
 5.4: radan rakentamista ja liikkuvat lieriöt, kellon kanssa säätöä lisää 3h
 6.4: liikkuvat seinät, colliderien ihmettelyä ja minimap 5h
+11.4: Tekstit ja lopetus 5h
