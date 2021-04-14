@@ -13,8 +13,13 @@ public class Ending : MonoBehaviour
     float m_Timer;
     public Text endText;
     public Text time;
-    //public Timer timer;
+    
 
+    void Start()
+    {
+        endText.text = "";
+        time.text = "";
+    }
 
     void OnTriggerEnter(Collider other)
     {
@@ -52,11 +57,7 @@ public class Ending : MonoBehaviour
         }
     }
 
-    void Start()
-    {
-        endText.text = "";
-        time.text = "";
-    }
+    
 
 
 }

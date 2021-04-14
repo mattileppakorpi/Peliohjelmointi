@@ -16,16 +16,36 @@ public class PlayerController : MonoBehaviour
     private float movementZ;
     public Text infoText;
     public Text penaltyText;
+    public Transform BackToStart;
 
     
 
-    IEnumerator WaitSeconds()
+    IEnumerator ClearPenaltyText()
     {
         
         yield return new WaitForSeconds(5);
         penaltyText.text = "";
 
     }
+
+    IEnumerator ClearInfoText()
+    {
+
+        yield return new WaitForSeconds(5);
+        infoText.text = "";
+
+    }
+
+    IEnumerator SlowSpeed()
+    {
+        float temp = speed;
+        speed = speed / 4;
+
+        yield return new WaitForSeconds(5);
+        speed = temp;
+
+    }
+
     void Update()
     {
         hitText.text = "osumia: "+ hits.ToString();
@@ -37,8 +57,7 @@ public class PlayerController : MonoBehaviour
     {
         rb = GetComponent<Rigidbody>();
         penaltyText.text = "";
-        infoText.text = "spacesta hyppää!";
-       
+        
 
     }
 
@@ -54,7 +73,7 @@ public class PlayerController : MonoBehaviour
            
             movementZ = 10.0f;
             playerIsOnTheground = false;
-            infoText.text = "";
+            //infoText.text = "";
         }
     }
 
@@ -88,8 +107,22 @@ public class PlayerController : MonoBehaviour
             Timer.instance.AddSeconds(2.0f);
             hits = hits + 1;
             penaltyText.text = "Penalttia +2s!";
-            //ShowPenaltyText();
-            StartCoroutine(WaitSeconds());
+            
+            StartCoroutine(ClearPenaltyText());
+        }
+
+        if(collision.gameObject.tag == "Slower")
+        {
+            StartCoroutine(SlowSpeed());
+            infoText.text = "Osuit hidastavaan ansaan!";
+            StartCoroutine(ClearInfoText());
+        }
+
+        if (collision.gameObject.tag == "WorstEnemy")
+        {
+            transform.position = BackToStart.position;
+            infoText.text = "Takaisin lähtöruutuun, pahus vie!";
+            StartCoroutine(ClearInfoText());
         }
 
     }
