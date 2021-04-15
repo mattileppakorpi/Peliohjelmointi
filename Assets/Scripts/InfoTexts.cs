@@ -10,7 +10,7 @@ public class InfoTexts : MonoBehaviour
 
     void Start()
     {
-        infoText.text = "spacesta hyppää!";
+        infoText.text = "spacesta hyppää, c on turbo!";
     }
     
 
@@ -26,7 +26,7 @@ public class InfoTexts : MonoBehaviour
     IEnumerator ClearInfoText()
     {
 
-        yield return new WaitForSeconds(7);
+        yield return new WaitForSecondsRealtime(4);
         infoText.text = "";
 
     }

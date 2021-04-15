@@ -17,6 +17,8 @@ public class PlayerController : MonoBehaviour
     public Text infoText;
     public Text penaltyText;
     public Transform BackToStart;
+    public float bounceSpeed = 20f;
+    public bool bounce = false;
 
     
 
@@ -25,6 +27,22 @@ public class PlayerController : MonoBehaviour
         
         yield return new WaitForSeconds(5);
         penaltyText.text = "";
+
+    }
+
+    IEnumerator SpeedToNormal()
+    {
+
+        yield return new WaitForSeconds(1);
+        speed = speed / 2;
+
+    }
+
+    IEnumerator StopBounce()
+    {
+
+        yield return new WaitForSeconds(1);
+        bounce=false;
 
     }
 
@@ -41,7 +59,7 @@ public class PlayerController : MonoBehaviour
         float temp = speed;
         speed = speed / 4;
 
-        yield return new WaitForSeconds(5);
+        yield return new WaitForSecondsRealtime(4);
         speed = temp;
 
     }
@@ -71,13 +89,19 @@ public class PlayerController : MonoBehaviour
     {
         if (playerIsOnTheground) { 
            
-            movementZ = 10.0f;
+            movementZ = 12.0f;
             playerIsOnTheground = false;
             //infoText.text = "";
         }
     }
 
-    
+    void OnTurbo()//turbonappi
+    {
+        speed = speed * 2;
+        StartCoroutine(SpeedToNormal());
+    }
+
+
     void FixedUpdate()
     {
         Vector3 movement = new Vector3(movementX, movementZ, movementY);
@@ -89,7 +113,14 @@ public class PlayerController : MonoBehaviour
         {
             movementZ = 0.0f;
         }
-     
+
+        if (bounce == true)
+        {
+            Vector3 movement2 = new Vector3(-(movementX), 0f, -(movementY));
+            rb.AddForce(movement2 * bounceSpeed);
+            
+        }
+
 
 
     }
@@ -99,7 +130,7 @@ public class PlayerController : MonoBehaviour
         if (collision.gameObject.tag == "Ground")
         {
             playerIsOnTheground = true;
-            //Debug.Log("Test");
+            
         }
 
         if (collision.gameObject.tag == "Wall")
@@ -123,6 +154,13 @@ public class PlayerController : MonoBehaviour
             transform.position = BackToStart.position;
             infoText.text = "Takaisin lähtöruutuun, pahus vie!";
             StartCoroutine(ClearInfoText());
+        }
+
+        if (collision.gameObject.tag == "Bouncer")
+        {
+
+            bounce = true;
+            StartCoroutine(StopBounce());
         }
 
     }

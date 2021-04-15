@@ -43,9 +43,15 @@ public class Ending : MonoBehaviour
 
     void EndLevel()
     {
-        //endText = GetComponent<Text3>() as Text;
-        endText.text = "Hienosti pelattu, onnea!!!";
         string aika = Timer.instance.counterText.text;
+        string firstAndSecond = aika.Substring(0, 2);
+
+        if (firstAndSecond == "00")
+        {
+            endText.text = "Alle minuuttiin, ei oo todellista!!!";
+        }
+        else { endText.text = "Hienosti pelattu, onnea!!!"; }
+        
         Timer.instance.enabled = false;
         time.text = "aika:" + aika;
         m_Timer += Time.deltaTime;

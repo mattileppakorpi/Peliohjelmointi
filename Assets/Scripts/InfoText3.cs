@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class InfoText2 : MonoBehaviour
+public class InfoText3 : MonoBehaviour
 {
     public Text infoText;
     public GameObject player;
@@ -12,7 +12,7 @@ public class InfoText2 : MonoBehaviour
     {
         if (other.gameObject == player)
         {
-            infoText.text = "Vihulaisen sininen pallo vie takaisin alkuun, älä vaan osu!!";
+            infoText.text = "Varo, liikkuva seinä heittää takaspäin!";
             StartCoroutine(ClearInfoText());
         }
     }
