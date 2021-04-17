@@ -10,7 +10,7 @@ Grafiikan osalta työ jätettiin hyvin pelkistetyksi koska grafiikan osuus arvio
 
 Peliä tehdessä nälkä kasvoi syödessä, ja alunperin melko simppelistä projektista tulikin yllättävän moniominaisuuksinen peli. Alle lueteltuna tärkeimpiä ominaisuuksia:
 - Pallolle lisätty hyppynappi spacesta ja hieman pomppimista. Ilmassa ei voi hypätä. Käytössä unityn uusi inputsystem.
-- Pallolle lisätty turbonappi josta tulee hetkellinen(Coroutine) *1.5 lisäboosti.
+- Pallolle lisätty turbonappi c josta tulee hetkellinen(Coroutine) *1.5 lisäboosti.
 - Lisätty ajanotto (Unityn Time.time), ja seinään osumista tulee +2s lisää aikalaskuriin välittömästi. Seinäosumien määrä myös näkyy ruudulla.
 - Pelaajalle tulee etenemisen mukaan ruutuun ohjetekstejä, jotka viipyvät ruudussa hetken (Coroutine).
 - Lopussa tulee näkyville peliin käytetty aika ja lopputeksti ja jos pelasi alle minuuttiin tulee eri teksti.
@@ -20,7 +20,7 @@ Peliä tehdessä nälkä kasvoi syödessä, ja alunperin melko simppelistä proj
 - Liikkuvat seinät tönäisevät pelaajan takaisinpäin. 
 - Kentän loppukaarteessa liian leveillä ajolinjoilla saa tyhjästä yhden seinän eteensä.
 - Peliin lisätty Pause-nappi.
-- Peliin lisätty Restart-nappi. Tämä on myös lopputekstin ohella näkyvissä radan läpipääsyn jälkeen.
+- Peliin lisätty Restart-nappi. Tämä on myös lopputekstin ohella näkyvissä radan läpipääsyn jälkeen. Toimii myös näppäimistön r-painikkeella.
 - Peliin lisätty pyöreä minimap.
 - Sivuttain liikkuvien seinien lisäksi myös matalat esteet nousevat ja laskevat paitsi viimeinen.
 - Tärkeimmät asiat on tehty prefabeina joten niitä on helppo muokata.
