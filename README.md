@@ -43,8 +43,8 @@ että loppuimage on niiden päällä läpinäkyvänä ja siksi eivät reagoi kli
 - Myös tynnyrit tuntuvat ikään kuin hidastavan palloa ollessaan pallossa kiinni. En tiedä miksi.
 - Tynnyrit renderöityvät välillä osin seinien läpi mikä hieman ärsyttää. Ilmeisesti collidereita pitäisi jotenkin säätää. Nyt ne ovat kuitenkin 
 hieman pienempiä kuin itse tynnyri.
-- Restart ei buildissa ihan joka kerta toimi kentän loputtua. Peli menee kyllä alkuun mutta ei käynnisty.
-- En ole varma onko noita Coroutineja nyt käytetty miten fiksusti mutta sain kyllä niillä aikaan ihan ok toimivan pelin. Etenkin takaisin tänöisevan seinän olisi ehkä voinut tehdä ilmankin, nyt vaikutus kestää hieman liian kauan.
+- Restart ei buildissa ihan joka kerta toimi kentän loputtua. Peli menee kyllä alkuun mutta ei käynnisty. Pausea painamalla saattaa herätä.
+- En ole varma onko noita Coroutineja nyt käytetty miten fiksusti mutta sain kyllä niillä aikaan ihan ok toimivan pelin. Etenkin takaisin tönäisevan seinän olisi ehkä voinut tehdä ilmankin, nyt vaikutus kestää hieman liian kauan.
 - Z-ulottuvuutta olisi voinut käyttää pelissä enemmänkin. 
 - Grafiikoita olisi ollut kiva hieroa enemmän mutta minimap alkoi temppuilemaan jos esim. seinille laittoi jonkin tekstuurin, esim. tiiliseinän. 
 Ne eivät enää näkyneet minimapissa. Minimapin olisi kaiketi voinut tehdä myös staattisena niin että vain liikkuvat objektit päivittyvät.
@@ -54,7 +54,7 @@ Mielestäni onnistuin tekemään peliin melko monipuolisia ominaisuuksia. Ulkoas
 Lisäjuttuja tähän olisi voinut tehdä vielä vaikka kuinka, mutta jo nyt työhön on käytetty reilu 40h. Työ oli kuitenkin melko koukuttavaa ja hauskaa, 
 ja myös opettavaista ja pelkän Unityn pyörittelyn lisäksi myös ihan perus koodaamista tuli tehtyä yllättävän paljon.
 En ainakaan itse saanut peliä ihan heti rikki, joten se lienee melko vakaa. Tosin joku muu voi onnistua tässä huomattavasti paremmin.
-Välipalautusarvioihin perustuen työ on mielestäni arvosanan 4 arvoinen.
+Välipalautusarvioihin perustuen työ on mielestäni arvosanan 4 arvoinen, lisäsin vielä turbon, pausen ja restartin viimeisen välipalautuksen jälkeen ja paransin ulkoasua. 
 
 # Aikataulu
 
@@ -69,7 +69,7 @@ Välipalautusarvioihin perustuen työ on mielestäni arvosanan 4 arvoinen.
 - 14.4: Lisävastustajia ja hidastusansa 4h, muuta säätöä ja hieromista
 - 15.4 bouncing ja wall bouncing, näkymätön seinä, restart, turbo ja muu säätö 4h
 - 16.4 restart toimimaan myös buttonista. muuta säätöä. 3h.
-- 17.4 dokumenttien tekoa,pausenappi, buildia ja loppusäätöjä. 5h.
+- 17.4 dokumenttien tekoa, pausenappi, buildia ja loppusäätöjä. 5h.
 - yht: 41h. 
 
 # Kuvat
