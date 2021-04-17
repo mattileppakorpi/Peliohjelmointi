@@ -60,10 +60,10 @@ Välipalautusarvioihin perustuen työ on mielestäni arvosanan 4 arvoinen.
 - 6.4: liikkuvat seinät, colliderien ihmettelyä ja minimap 5h
 - 11.4: Tekstit ja lopetus 5h
 - 12.4: Eka build ja välipalautus 1h
-- 14.4: Lisävastustajia ja ansa 4h, muuta säätöä ja hieromista
+- 14.4: Lisävastustajia ja hidastusansa 4h, muuta säätöä ja hieromista
 - 15.4 bouncing ja wall bouncing, näkymätön seinä, restart, turbo ja muu säätö 4h
 - 16.4 restart toimimaan myös buttonista. muuta säätöä. 3h.
-- 17.4 dokumenttien tekoa, buildia ja loppusäätöjä. 5h.
+- 17.4 dokumenttien tekoa,pausenappi, buildia ja loppusäätöjä. 5h.
 - yht: 41h. 
 
 # Kuvat
