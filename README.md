@@ -7,7 +7,7 @@ Grafiikan osalta työ jätettiin hyvin pelkistetyksi koska grafiikan osuus arvio
 # Toteutus
 
 Peliä tehdessä nälkä kasvoi syödessä, ja alunperin melko simppelistä projektista tulikin yllättävän moniominaisuuksinen peli. Alle lueteltuna tärkeimpiä ominaisuuksia:
-- Pallolle lisätty hyppynappi spacesta ja hieman pomppimista. Käytössä unityn uusi inputsystem.
+- Pallolle lisätty hyppynappi spacesta ja hieman pomppimista. Ilmassa ei voi hypätä. Käytössä unityn uusi inputsystem.
 - Pallolle lisätty turbonappi josta tulee hetkellinen(Coroutine) *1.5 lisäboosti.
 - Lisätty ajanotto, ja seinään osumista tulee +2s lisää aikalaskuriin välittömästi. Seinäosumien määrä myös näkyy ruudulla.
 - Pelaajalle tulee etenemisen mukaan ruutuun ohjetekstejä, jotka viipyvät ruudussa hetken.
@@ -18,13 +18,16 @@ Peliä tehdessä nälkä kasvoi syödessä, ja alunperin melko simppelistä proj
 - Liikkuvat seinät tönäisevät pelaajan takaisinpäin. 
 - Kentän loppukaarteessa liian leveillä ajolinjoilla saa tyhjästä yhden seinän eteensä.
 - Peliin lisätty Pause-nappi.
-- Peliin lisätty Restart-nappi.
+- Peliin lisätty Restart-nappi. Tämä on myös lopputekstin ohella näkyvissä radan läpipääsyn jälkeen.
 - Peliin lisätty pyöreä minimap.
 - Tärkeimmät asiat on tehty prefabeina joten niitä on helppo muokata.
+- Peli loppuu kun keltaiseen leijuvaan kuutioon onnistuu hyppäämään.
+- Mikäli kentältä ajautuu muurien toiselle puolen on siellä muutama ramppi joista pääsee takaisin, ja kauempana on näkymättömät seinät ettei 
+pelialustalta pääse putoamaan.
 
 Jossain vaiheessa oli myös mielessä että olisinko tehnyt pelistä 3rd person camera- tyyppisen, 
 mutta luovuin kuitenkin tästä ajatuksesta ajanpuutteen vuoksi. Myös jonkinlainen torjuntakeino sinisiä palloja vastaan olisi tarpeen
-koska ne ovat erittäin ärsyttäviä.
+koska ne ovat erittäin ärsyttäviä. Scripteistä löytyy myös pois jätetty smooth camera, joka ei näyttänyt ollenkaan hyvältä.
 
 # Hankalia asioita tai ongelmia:
 - Kelloon ajan lisäämien osumasta tuotti aluksi hieman hankaluuksia. Myös UI:n buttonien kanssa oli aluksi hankalaa kunnes tajusin 
@@ -42,7 +45,8 @@ hieman pienempiä kuin itse tynnyri.
 
 # Onnistumiset ja yhteenveto
 Mielestäni onnistuin tekemään peliin melko monipuolisia ominaisuuksia. Ulkoasu on mielestäni melko ok vaikka graafinen puoli jäi hyvin vähälle.
-Lisäjuttuja tähän olisi voinut tehdä vielä vaikka kuinka, mutta jo nyt työhön on käytetty reilu 40h. 
+Lisäjuttuja tähän olisi voinut tehdä vielä vaikka kuinka, mutta jo nyt työhön on käytetty reilu 40h. Työ oli kuitenkin melko koukuttavaa ja hauskaa, 
+ja myös opettavaista ja pelkän Unityn pyörittelyn lisäksi myös ihan perus koodaamista tuli tehtyä yllättävän paljon.
 Välipalautusarvioihin perustuen työ on mielestäni arvosanan 4 arvoinen.
 
 # Aikataulu
