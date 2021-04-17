@@ -1,4 +1,3 @@
-
 # Johdanto
 
 Peliohjelmoinnin harjoitustyönä oli tarkoitus jatkaa Unityn Roll-a-ball- tutorialin pohjalta 3d-maailmassa tapahtuvaa pallopeliä, johon 
@@ -60,4 +59,4 @@ Välipalautusarvioihin perustuen työ on mielestäni arvosanan 4 arvoinen.
 - 15.4 bouncing ja wall bouncing, näkymätön seinä, restart, turbo ja muu säätö 4h
 - 16.4 restart toimimaan myös buttonista. muuta säätöä. 3h.
 - 17.4 dokumenttien tekoa, buildia ja loppusäätöjä. 5h.
-- yht: 40h. 
+- yht: 41h. 
