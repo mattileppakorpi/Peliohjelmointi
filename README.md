@@ -10,7 +10,7 @@ Peliä tehdessä nälkä kasvoi syödessä, ja alunperin melko simppelistä proj
 - Pallolle lisätty hyppynappi spacesta ja hieman pomppimista. Ilmassa ei voi hypätä. Käytössä unityn uusi inputsystem.
 - Pallolle lisätty turbonappi josta tulee hetkellinen(Coroutine) *1.5 lisäboosti.
 - Lisätty ajanotto (Unityn Time.time), ja seinään osumista tulee +2s lisää aikalaskuriin välittömästi. Seinäosumien määrä myös näkyy ruudulla.
-- Pelaajalle tulee etenemisen mukaan ruutuun ohjetekstejä, jotka viipyvät ruudussa hetken.
+- Pelaajalle tulee etenemisen mukaan ruutuun ohjetekstejä, jotka viipyvät ruudussa hetken (Coroutine).
 - Lopussa tulee näkyville peliin käytetty aika ja lopputeksti ja jos pelasi alle minuuttiin tulee eri teksti.
 - Pelissä on tynnyrimäisiä vihollisia jotka jahtaavat pelaajaa ja näin hidastavat menoa. Mitään pelaajan vauhdin hidastusvaikutusta niillä ei kuitenkaan ole vaikka välillä siltä vaikuttaa. Ne siis ainoastaan tulevat eteen ja sitä kautta ovat tiellä radan suorittamisessa.
 - Siniset vihollispallot lähettävät pelaajan kentän alkuun pelaajaan osuessaan. Kello ei nollaudu.
@@ -25,6 +25,7 @@ Peliä tehdessä nälkä kasvoi syödessä, ja alunperin melko simppelistä proj
 - Peli loppuu kun keltaiseen leijuvaan kuutioon onnistuu hyppäämään.
 - Mikäli kentältä ajautuu muurien toiselle puolen on siellä muutama ramppi joista pääsee takaisin, ja kauempana on näkymättömät seinät ettei 
 pelialustalta pääse putoamaan.
+- Pääosa tapahtumista on tehty onCollisionEnter ja siitä tagin tunnistuksella, muutamia myös triggereillä.
 
 Jossain vaiheessa oli myös mielessä että olisinko tehnyt pelistä 3rd person camera- tyyppisen, 
 mutta luovuin kuitenkin tästä ajatuksesta ajanpuutteen vuoksi. Myös jonkinlainen torjuntakeino sinisiä palloja vastaan olisi tarpeen
