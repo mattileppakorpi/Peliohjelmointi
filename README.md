@@ -47,6 +47,7 @@ hieman pienempiä kuin itse tynnyri.
 Mielestäni onnistuin tekemään peliin melko monipuolisia ominaisuuksia. Ulkoasu on mielestäni melko ok vaikka graafinen puoli jäi hyvin vähälle.
 Lisäjuttuja tähän olisi voinut tehdä vielä vaikka kuinka, mutta jo nyt työhön on käytetty reilu 40h. Työ oli kuitenkin melko koukuttavaa ja hauskaa, 
 ja myös opettavaista ja pelkän Unityn pyörittelyn lisäksi myös ihan perus koodaamista tuli tehtyä yllättävän paljon.
+En ainakaan itse saanut peliä ihan heti rikki, joten se lienee melko vakaa. Tosin joku muu voi onnistua tässä huomattavasti paremmin.
 Välipalautusarvioihin perustuen työ on mielestäni arvosanan 4 arvoinen.
 
 # Aikataulu
