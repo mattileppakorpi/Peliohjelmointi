@@ -9,7 +9,7 @@ Grafiikan osalta työ jätettiin hyvin pelkistetyksi koska grafiikan osuus arvio
 Peliä tehdessä nälkä kasvoi syödessä, ja alunperin melko simppelistä projektista tulikin yllättävän moniominaisuuksinen peli. Alle lueteltuna tärkeimpiä ominaisuuksia:
 - Pallolle lisätty hyppynappi spacesta ja hieman pomppimista. Ilmassa ei voi hypätä. Käytössä unityn uusi inputsystem.
 - Pallolle lisätty turbonappi josta tulee hetkellinen(Coroutine) *1.5 lisäboosti.
-- Lisätty ajanotto, ja seinään osumista tulee +2s lisää aikalaskuriin välittömästi. Seinäosumien määrä myös näkyy ruudulla.
+- Lisätty ajanotto (Unityn Time.time), ja seinään osumista tulee +2s lisää aikalaskuriin välittömästi. Seinäosumien määrä myös näkyy ruudulla.
 - Pelaajalle tulee etenemisen mukaan ruutuun ohjetekstejä, jotka viipyvät ruudussa hetken.
 - Lopussa tulee näkyville peliin käytetty aika ja lopputeksti ja jos pelasi alle minuuttiin tulee eri teksti.
 - Pelissä on tynnyrimäisiä vihollisia jotka jahtaavat pelaajaa ja näin hidastavat menoa. Mitään pelaajan vauhdin hidastusvaikutusta niillä ei kuitenkaan ole vaikka välillä siltä vaikuttaa. Ne siis ainoastaan tulevat eteen ja sitä kautta ovat tiellä radan suorittamisessa.
