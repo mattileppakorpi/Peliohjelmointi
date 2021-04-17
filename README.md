@@ -4,6 +4,8 @@ Peliohjelmoinnin harjoitustyönä oli tarkoitus jatkaa Unityn Roll-a-ball- tutor
 lisättäisiin isompi kenttä, ajanotto, esteitä ja vihollisia ja mitä kaikkea muuta matkan varrella mieleen tulisikaan ja mihin aika ja taidot riittäisivät.
 Grafiikan osalta työ jätettiin hyvin pelkistetyksi koska grafiikan osuus arviointiin oli ohjeen mukaan vähäinen.
 
+[Linkki peliin](https://student.labranet.jamk.fi/~N3998/Peliohjelmointi/Harkkabuild5/)
+
 # Toteutus
 
 Peliä tehdessä nälkä kasvoi syödessä, ja alunperin melko simppelistä projektista tulikin yllättävän moniominaisuuksinen peli. Alle lueteltuna tärkeimpiä ominaisuuksia:
