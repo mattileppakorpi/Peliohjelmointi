@@ -11,12 +11,6 @@ public class WorstEnemy : MonoBehaviour
 
 
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
     // Update is called once per frame
     void Update()
     {
@@ -26,8 +20,9 @@ public class WorstEnemy : MonoBehaviour
         float distanceToPlayer = directionVector.magnitude;
 
 
-        if (distanceToPlayer >= 1.5f)//&& distanceToPlayer <= 5f
-        {
+        //if (distanceToPlayer >= 1.5f)//&& distanceToPlayer <= 5f
+        //{
+        //tälle viholliselle jätin vain tämän kohdan koodia.
 
             targetPosition = new Vector3(
                 directionVector.normalized.x * Time.deltaTime * MoveSpeed,
@@ -36,7 +31,7 @@ public class WorstEnemy : MonoBehaviour
 
 
             transform.position += targetPosition;
-        }
+        /*}
         else
         {
             //Debug.Log("testi");
@@ -47,6 +42,6 @@ public class WorstEnemy : MonoBehaviour
 
             float rotSpeed = 5f;
             transform.rotation = Quaternion.Lerp(transform.rotation, enemysNewRotation, Time.deltaTime * rotSpeed);
-        }
+        }*/
     }
 }

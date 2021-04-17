@@ -4,17 +4,14 @@ using UnityEngine;
 
 public class SmoothCamera : MonoBehaviour
 {
+    //tämä jäi kokonaan pois käytöstä, näytti pahalta
+
+
     public Transform target;
     public float smoothSpeed = 10f;
     public Vector3 offset;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
+  
     void FixedUpdate()
     {
         Vector3 desiredPosition = target.position + offset;

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
@@ -20,24 +21,30 @@ public class PlayerController : MonoBehaviour
     public float bounceSpeed = 20f;
     public bool bounce = false;
 
-    
+    public void OnRestartGame()
+    {
+        
+        SceneManager.LoadScene("Palloralli");
+        Timer.instance.ClearTimer();
+    }
 
+    //tyhjentää penaltytext-kentän
     IEnumerator ClearPenaltyText()
     {
         
-        yield return new WaitForSeconds(5);
+        yield return new WaitForSecondsRealtime(2);
         penaltyText.text = "";
 
     }
-
+    //lopettaa turbonapin
     IEnumerator SpeedToNormal()
     {
 
         yield return new WaitForSeconds(1);
-        speed = speed / 2;
+        speed = speed / 1.5f;
 
     }
-
+    // lopettaa liikkuvan seinän antaman vauhdin
     IEnumerator StopBounce()
     {
 
@@ -45,15 +52,16 @@ public class PlayerController : MonoBehaviour
         bounce=false;
 
     }
-
+    // tyhjentää infotekstin
     IEnumerator ClearInfoText()
     {
 
-        yield return new WaitForSeconds(5);
+        yield return new WaitForSecondsRealtime(3);
         infoText.text = "";
 
     }
 
+    //hidastava seinä
     IEnumerator SlowSpeed()
     {
         float temp = speed;
@@ -97,7 +105,7 @@ public class PlayerController : MonoBehaviour
 
     void OnTurbo()//turbonappi
     {
-        speed = speed * 2;
+        speed = speed * 1.5f;
         StartCoroutine(SpeedToNormal());
     }
 
@@ -108,12 +116,14 @@ public class PlayerController : MonoBehaviour
         
 
         rb.AddForce(movement * speed);
-       
+
+       //ilmassa ollessa hyppynappi ei toimi
         if (playerIsOnTheground == false)
         {
             movementZ = 0.0f;
         }
 
+        //liikkuvan seinän antama tönäisy
         if (bounce == true)
         {
             Vector3 movement2 = new Vector3(-(movementX), 0f, -(movementY));
@@ -127,12 +137,14 @@ public class PlayerController : MonoBehaviour
     
     public void OnCollisionEnter(Collision collision)
     {
+        //hyppynapin onko maassa-tarkistus
         if (collision.gameObject.tag == "Ground")
         {
             playerIsOnTheground = true;
             
         }
 
+        //seinäosumat
         if (collision.gameObject.tag == "Wall")
         {
             Timer.instance.AddSeconds(2.0f);
@@ -142,6 +154,7 @@ public class PlayerController : MonoBehaviour
             StartCoroutine(ClearPenaltyText());
         }
 
+        //idastava seinä
         if(collision.gameObject.tag == "Slower")
         {
             StartCoroutine(SlowSpeed());
@@ -149,6 +162,7 @@ public class PlayerController : MonoBehaviour
             StartCoroutine(ClearInfoText());
         }
 
+        //sininen pallo heittää radan alkuun
         if (collision.gameObject.tag == "WorstEnemy")
         {
             transform.position = BackToStart.position;
@@ -156,6 +170,7 @@ public class PlayerController : MonoBehaviour
             StartCoroutine(ClearInfoText());
         }
 
+        //liikkuva seinä tönäisee pelaajan takaspäin
         if (collision.gameObject.tag == "Bouncer")
         {
 

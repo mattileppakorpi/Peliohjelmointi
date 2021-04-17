@@ -14,6 +14,8 @@ public class Ending : MonoBehaviour
     public Text endText;
     public Text time;
     
+    
+    
 
     void Start()
     {
@@ -59,7 +61,8 @@ public class Ending : MonoBehaviour
 
         if (m_Timer > fadeDuration)
         {
-            Application.Quit();
+            Restart.instance.PauseGame();
+            //Application.Quit();
         }
     }
 
