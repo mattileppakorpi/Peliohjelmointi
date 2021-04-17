@@ -32,7 +32,6 @@ että loppuimage on niiden päällä läpinäkyvänä ja siksi eivät reagoi kli
 - välillä 3d teki omistuisia asioita.. palloista tuli sikarinmuotoisia.. ja vihollisen pallot ikäänkuin leijuivat.(ks. kuvat) Lopulta huomasin että kansiolla johon ne oli kerätty oli jostain syystä scalearvoissa muuta kuin ykkösiä. Selvisi siis sekin.
 - kansiorakenne voisi varmaan olla vielä siitimpi. 
 - WebGL-build teki pelin loputtua virheilmoituksen (ks. kuvat). Sen vuoksi poistin Application.Quitin ja tein sen sijaan niin että lopussa peli menee pauselle ja ainoastaan restart nappi jää käyttöön.
-![](error1.PNG)
 - Hidastavan seinän hidastava vaikutus jää joskus päälle.
 - Myös tynnyrit tuntuvat ikään kuin hidastavan palloa ollessaan pallossa kiinni. En tiedä miksi.
 - Tynnyrit renderöityvät välillä osin seinien läpi mikä hieman ärsyttää. Ilmeisesti collidereita pitäisi jotenkin säätää. Nyt ne ovat kuitenkin 
@@ -61,3 +60,10 @@ Välipalautusarvioihin perustuen työ on mielestäni arvosanan 4 arvoinen.
 - 16.4 restart toimimaan myös buttonista. muuta säätöä. 3h.
 - 17.4 dokumenttien tekoa, buildia ja loppusäätöjä. 5h.
 - yht: 41h. 
+
+# Kuvat
+
+![](error1.PNG)
+![](error2.PNG)
+![](error3.PNG)
+![](Soikio.PNG)
