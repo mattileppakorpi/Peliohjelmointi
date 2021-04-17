@@ -42,7 +42,9 @@ että loppuimage on niiden päällä läpinäkyvänä ja siksi eivät reagoi kli
 hieman pienempiä kuin itse tynnyri.
 - Restart ei buildissa ihan joka kerta toimi kentän loputtua. Peli menee kyllä alkuun mutta ei käynnisty.
 - En ole varma onko noita Coroutineja nyt käytetty miten fiksusti mutta sain kyllä niillä aikaan ihan ok toimivan pelin. Etenkin takaisin tänöisevan seinän olisi ehkä voinut tehdä ilmankin, nyt vaikutus kestää hieman liian kauan.
--Z-ulottuvuutta olisi voinut käyttää pelissä enemmänkin. 
+- Z-ulottuvuutta olisi voinut käyttää pelissä enemmänkin. 
+- Grafiikoita olisi ollut kiva hieroa enemmän mutta minimap alkoi temppuilemaan jos esim. seinille laittoi jonkin tekstuurin, esim. tiiliseinän. 
+Ne eivät enää näkyneet minimapissa. 
 
 # Onnistumiset ja yhteenveto
 Mielestäni onnistuin tekemään peliin melko monipuolisia ominaisuuksia. Ulkoasu on mielestäni melko ok vaikka graafinen puoli jäi hyvin vähälle.
