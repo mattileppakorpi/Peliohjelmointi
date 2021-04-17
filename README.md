@@ -20,6 +20,7 @@ Peliä tehdessä nälkä kasvoi syödessä, ja alunperin melko simppelistä proj
 - Peliin lisätty Pause-nappi.
 - Peliin lisätty Restart-nappi. Tämä on myös lopputekstin ohella näkyvissä radan läpipääsyn jälkeen.
 - Peliin lisätty pyöreä minimap.
+- Sivuttain liikkuvien seinien lisäksi myös matalat esteet nousevat ja laskevat paitsi viimeinen.
 - Tärkeimmät asiat on tehty prefabeina joten niitä on helppo muokata.
 - Peli loppuu kun keltaiseen leijuvaan kuutioon onnistuu hyppäämään.
 - Mikäli kentältä ajautuu muurien toiselle puolen on siellä muutama ramppi joista pääsee takaisin, ja kauempana on näkymättömät seinät ettei 
