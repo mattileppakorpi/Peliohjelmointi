@@ -45,7 +45,7 @@ hieman pienempiä kuin itse tynnyri.
 - En ole varma onko noita Coroutineja nyt käytetty miten fiksusti mutta sain kyllä niillä aikaan ihan ok toimivan pelin. Etenkin takaisin tänöisevan seinän olisi ehkä voinut tehdä ilmankin, nyt vaikutus kestää hieman liian kauan.
 - Z-ulottuvuutta olisi voinut käyttää pelissä enemmänkin. 
 - Grafiikoita olisi ollut kiva hieroa enemmän mutta minimap alkoi temppuilemaan jos esim. seinille laittoi jonkin tekstuurin, esim. tiiliseinän. 
-Ne eivät enää näkyneet minimapissa. 
+Ne eivät enää näkyneet minimapissa. Minimapin olisi kaiketi voinut tehdä myös staattisena niin että vain liikkuvat objektit päivittyvät.
 
 # Onnistumiset ja yhteenveto
 Mielestäni onnistuin tekemään peliin melko monipuolisia ominaisuuksia. Ulkoasu on mielestäni melko ok vaikka graafinen puoli jäi hyvin vähälle.
