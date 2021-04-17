@@ -36,8 +36,8 @@ koska ne ovat erittäin ärsyttäviä. Scripteistä löytyy myös pois jätetty 
 # Hankalia asioita tai ongelmia:
 - Kelloon ajan lisäämien osumasta tuotti aluksi hieman hankaluuksia. Myös UI:n buttonien kanssa oli aluksi hankalaa kunnes tajusin 
 että loppuimage on niiden päällä läpinäkyvänä ja siksi eivät reagoi klikkaukseen.
-- välillä 3d teki omistuisia asioita.. palloista tuli sikarinmuotoisia.. ja vihollisen pallot ikäänkuin leijuivat.(ks. kuvat) Lopulta huomasin että kansiolla johon ne oli kerätty oli jostain syystä scalearvoissa muuta kuin ykkösiä. Selvisi siis sekin.
-- kansiorakenne voisi varmaan olla vielä siitimpi. 
+- välillä 3d teki omistuisia asioita. Palloista tuli sikarinmuotoisia tai soikioita ja vihollisen pallot ikäänkuin leijuivat (ks. kuvat). Lopulta huomasin että kansiolla johon ne oli kerätty oli jostain syystä scalearvoissa muuta kuin ykkösiä. Selvisi siis sekin.
+- kansiorakenne voisi varmaan olla vielä siistimpi. 
 - WebGL-build teki pelin loputtua virheilmoituksen (ks. kuvat). Sen vuoksi poistin Application.Quitin ja tein sen sijaan niin että lopussa peli menee pauselle ja ainoastaan restart nappi jää käyttöön. En keksinyt mikä lopun ilmoitukseen on syynä mutta ilmeisesti WebGL-buildeilla on melko usein jotain ongelmia, ja koin ettei ole tämän kurssin asioita lähteä sen kanssa painimaan.
 - Hidastavan seinän hidastava vaikutus jää joskus päälle.
 - Myös tynnyrit tuntuvat ikään kuin hidastavan palloa ollessaan pallossa kiinni. En tiedä miksi.
@@ -46,15 +46,15 @@ hieman pienempiä kuin itse tynnyri.
 - Restart ei buildissa ihan joka kerta toimi kentän loputtua. Peli menee kyllä alkuun mutta ei käynnisty. Pausea painamalla saattaa herätä.
 - En ole varma onko noita Coroutineja nyt käytetty miten fiksusti mutta sain kyllä niillä aikaan ihan ok toimivan pelin. Etenkin takaisin tönäisevan seinän olisi ehkä voinut tehdä ilmankin, nyt vaikutus kestää hieman liian kauan.
 - Z-ulottuvuutta olisi voinut käyttää pelissä enemmänkin. 
-- Grafiikoita olisi ollut kiva hieroa enemmän mutta minimap alkoi temppuilemaan jos esim. seinille laittoi jonkin tekstuurin, esim. tiiliseinän. 
-Ne eivät enää näkyneet minimapissa. Minimapin olisi kaiketi voinut tehdä myös staattisena niin että vain liikkuvat objektit päivittyvät.
+- Grafiikoita olisi ollut kiva hieroa enemmän mutta minimap alkoi temppuilemaan. Jos esim. seinille laittoi jonkin tekstuurin, esim. tiiliseinän, 
+ne eivät enää näkyneet minimapissa. Minimapin olisi kaiketi voinut tehdä myös staattisena niin että vain liikkuvat objektit päivittyvät.
 
 # Onnistumiset ja yhteenveto
 Mielestäni onnistuin tekemään peliin melko monipuolisia ominaisuuksia. Ulkoasu on mielestäni melko ok vaikka graafinen puoli jäi hyvin vähälle.
 Lisäjuttuja tähän olisi voinut tehdä vielä vaikka kuinka, mutta jo nyt työhön on käytetty reilu 40h. Työ oli kuitenkin melko koukuttavaa ja hauskaa, 
 ja myös opettavaista ja pelkän Unityn pyörittelyn lisäksi myös ihan perus koodaamista tuli tehtyä yllättävän paljon.
 En ainakaan itse saanut peliä ihan heti rikki, joten se lienee melko vakaa. Tosin joku muu voi onnistua tässä huomattavasti paremmin.
-Välipalautusarvioihin perustuen työ on mielestäni arvosanan 4 arvoinen, lisäsin vielä turbon, pausen ja restartin viimeisen välipalautuksen jälkeen ja paransin ulkoasua. 
+Välipalautusarvioihin perustuen työ on mielestäni arvosanan 4 arvoinen. Lisäsin vielä turbon, pausen ja restartin viimeisen välipalautuksen jälkeen ja paransin ulkoasua. 
 
 # Aikataulu
 
