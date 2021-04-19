@@ -43,7 +43,7 @@ että loppuimage on niiden päällä läpinäkyvänä ja siksi eivät reagoi kli
 - Myös tynnyrit tuntuvat ikään kuin hidastavan palloa ollessaan pallossa kiinni. En tiedä miksi.
 - Tynnyrit renderöityvät välillä osin seinien läpi mikä hieman ärsyttää. Ilmeisesti collidereita pitäisi jotenkin säätää. Nyt ne ovat kuitenkin 
 hieman pienempiä kuin itse tynnyri.
-- Restart ei buildissa ihan joka kerta toimi kentän loputtua. Peli menee kyllä alkuun mutta ei käynnisty. Pausea painamalla saattaa herätä.
+- Restart ei buildissa ihan joka kerta toimi kentän loputtua. Peli menee kyllä alkuun mutta ei käynnisty. Pausea painamalla saattaa herätä. Kerran ekalla latauksellakin eivät napit reagoineet, piti restartata. 
 - En ole varma onko noita Coroutineja nyt käytetty miten fiksusti mutta sain kyllä niillä aikaan ihan ok toimivan pelin. Etenkin takaisin tönäisevan seinän olisi ehkä voinut tehdä ilmankin, nyt vaikutus kestää hieman liian kauan.
 - Z-ulottuvuutta olisi voinut käyttää pelissä enemmänkin. 
 - Grafiikoita olisi ollut kiva hieroa enemmän mutta minimap alkoi temppuilemaan. Jos esim. seinille laittoi jonkin tekstuurin, esim. tiiliseinän, 
