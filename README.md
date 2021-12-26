@@ -7,7 +7,7 @@ Grafiikan osalta työ jätettiin hyvin pelkistetyksi koska grafiikan osuus arvio
 [Linkki peliin](https://student.labranet.jamk.fi/~N3998/Peliohjelmointi/Harkkabuild5/)
 
 <img src="peli1.PNG" width="500" />
-<img src="peli2.PNG" width="500" />
+<img src="peli2.PNG" width="510" />
 
 # Toteutus
 
