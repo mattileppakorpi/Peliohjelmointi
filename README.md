@@ -76,4 +76,5 @@ Välipalautusarvioihin perustuen työ on mielestäni arvosanan 4 arvoinen. Lisä
 
 ![](peli1.PNG)
 ![](peli2.PNG)
+<img src="peli1.PNG" width="200" height="200" />
 
