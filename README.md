@@ -74,8 +74,6 @@ Välipalautusarvioihin perustuen työ on mielestäni arvosanan 4 arvoinen. Lisä
 
 # Kuvat
 
-![](error1.PNG)
-![](error2.PNG)
-![](error3.PNG)
-![](soikio.PNG)
-![](levy.PNG)
+![](peli1.PNG)
+![](peli2.PNG)
+
