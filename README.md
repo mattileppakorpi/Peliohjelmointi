@@ -3,9 +3,12 @@
 Peliohjelmoinnin harjoitustyönä oli tarkoitus jatkaa Unityn Roll-a-ball- tutorialin pohjalta 3d-maailmassa tapahtuvaa pallopeliä, johon 
 lisättäisiin isompi kenttä, ajanotto, esteitä ja vihollisia ja mitä kaikkea muuta matkan varrella mieleen tulisikaan ja mihin aika ja taidot riittäisivät.
 Grafiikan osalta työ jätettiin hyvin pelkistetyksi koska grafiikan osuus arviointiin oli ohjeen mukaan vähäinen.
-<img src="peli1.PNG" width="400" />
+
 
 [Linkki peliin](https://student.labranet.jamk.fi/~N3998/Peliohjelmointi/Harkkabuild5/)
+
+<img src="peli1.PNG" width="400" />
+<img src="peli2.PNG" width="400" />
 
 # Toteutus
 
