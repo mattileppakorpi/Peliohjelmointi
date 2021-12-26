@@ -38,7 +38,7 @@ koska ne ovat erittäin ärsyttäviä. Scripteistä löytyy myös pois jätetty 
 että loppuimage on niiden päällä läpinäkyvänä ja siksi eivät reagoi klikkaukseen.
 - välillä 3d teki omistuisia asioita. Palloista tuli sikarinmuotoisia tai soikioita ja vihollisen pallot ikäänkuin leijuivat (ks. [vikakuvat](https://gitlab.labranet.jamk.fi/N3998/poharkka/-/tree/master/vikakuvat)). Lopulta huomasin että kansiolla johon ne oli kerätty oli jostain syystä scalearvoissa muuta kuin ykkösiä. Selvisi siis sekin.
 - kansiorakenne voisi varmaan olla vielä siistimpi. 
-- WebGL-build teki pelin loputtua virheilmoituksen (ks. vikakuvat). Sen vuoksi poistin Application.Quitin ja tein sen sijaan niin että lopussa peli menee pauselle ja ainoastaan restart nappi jää käyttöön. En keksinyt mikä lopun ilmoitukseen on syynä mutta ilmeisesti WebGL-buildeilla on melko usein jotain ongelmia, ja koin ettei ole tämän kurssin asioita lähteä sen kanssa painimaan.
+- WebGL-build teki pelin loputtua virheilmoituksen (ks. [vikakuvat](https://gitlab.labranet.jamk.fi/N3998/poharkka/-/tree/master/vikakuvat)). Sen vuoksi poistin Application.Quitin ja tein sen sijaan niin että lopussa peli menee pauselle ja ainoastaan restart nappi jää käyttöön. En keksinyt mikä lopun ilmoitukseen on syynä mutta ilmeisesti WebGL-buildeilla on melko usein jotain ongelmia, ja koin ettei ole tämän kurssin asioita lähteä sen kanssa painimaan.
 - Hidastavan seinän hidastava vaikutus jää joskus päälle.
 - Myös tynnyrit tuntuvat ikään kuin hidastavan palloa ollessaan pallossa kiinni. En tiedä miksi.
 - Tynnyrit renderöityvät välillä osin seinien läpi mikä hieman ärsyttää. Ilmeisesti collidereita pitäisi jotenkin säätää. Nyt ne ovat kuitenkin 
