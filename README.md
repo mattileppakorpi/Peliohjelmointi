@@ -4,11 +4,10 @@ Peliohjelmoinnin harjoitustyönä oli tarkoitus jatkaa Unityn Roll-a-ball- tutor
 lisättäisiin isompi kenttä, ajanotto, esteitä ja vihollisia ja mitä kaikkea muuta matkan varrella mieleen tulisikaan ja mihin aika ja taidot riittäisivät.
 Grafiikan osalta työ jätettiin hyvin pelkistetyksi koska grafiikan osuus arviointiin oli ohjeen mukaan vähäinen.
 
-
 [Linkki peliin](https://student.labranet.jamk.fi/~N3998/Peliohjelmointi/Harkkabuild5/)
 
-<img src="peli1.PNG" width="400" />
-<img src="peli2.PNG" width="400" />
+<img src="peli1.PNG" width="500" />
+<img src="peli2.PNG" width="500" />
 
 # Toteutus
 
@@ -75,10 +74,3 @@ Välipalautusarvioihin perustuen työ on mielestäni arvosanan 4 arvoinen. Lisä
 - 16.4 restart toimimaan myös buttonista. muuta säätöä. 3h.
 - 17.4 dokumenttien tekoa, pausenappi, buildia ja loppusäätöjä. 5h.
 - yht: 41h. 
-
-# Kuvia pelistä
-
-![](peli1.PNG)
-![](peli2.PNG)
-
-
